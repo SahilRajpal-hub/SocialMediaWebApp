@@ -1,0 +1,30 @@
+{
+    "name": "socialmediawebapp",
+    "version": "1.0.0",
+    "description": "This is a demo social media app. Replication of this project needs authour permissions",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server",
+        "server": "nodemon server",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Sahil Rajpal",
+    "license": "MIT",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "colors": "^1.4.0",
+        "config": "^3.3.3",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-validator": "^6.8.1",
+        "gravatar": "^1.8.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.11.8",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "concurrently": "^5.3.0",
+        "nodemon": "^2.0.6"
+    }
+}
